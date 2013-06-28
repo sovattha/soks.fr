@@ -1,0 +1,141 @@
+@import 'sprites';
+
+@mixin dynamic-bg {
+	@-webkit-keyframes coloredSpans
+	{
+		0%    {background: #97e733;}
+		12%   {background: #47ff74;}
+		25%   {background: #3cf1f3;}
+		37%   {background: #77cbfd;}
+		50%   {background: #f19efd;}
+		62%   {background: #fa87fd;}
+		75%   {background: #fb9594;}
+		87%   {background: #fdba3e;}
+		100%  {background: #97e733;}
+	}
+
+	@-webkit-keyframes coloredImage
+	{
+		0%    {-webkit-filter: hue-rotate(0deg);}
+		12%   {-webkit-filter: hue-rotate(45deg);}
+		25%   {-webkit-filter: hue-rotate(90deg);}
+		37%   {-webkit-filter: hue-rotate(135deg);}
+		50%   {-webkit-filter: hue-rotate(180deg);}
+		62%   {-webkit-filter: hue-rotate(225deg);}
+		75%   {-webkit-filter: hue-rotate(270deg);}
+		87%   {-webkit-filter: hue-rotate(315deg);}
+		100%  {-webkit-filter: hue-rotate(350deg);}
+	}
+}
+
+@mixin pos {
+	aside {
+		float: left;
+		div {
+			float: left;
+			margin-right: 10px;
+		}
+	}
+	footer div {
+		float: left;
+		margin-right: 10px;
+	}
+}
+
+@mixin typo {
+	font-family: Arial;
+	font-size: 1em;
+	h1 {
+		text-align: center;
+	}
+	a {
+		font-decoration: none;
+	}
+	aside a {
+		white-space: nowrap;
+	}
+	blockquote {
+		font-style: italic;
+	}
+}
+
+@mixin colors {
+	body, a {
+		color: #222;
+	}
+	a {
+		&:hover {
+			background-color: lightblue;
+		}
+	}
+	#intro {
+		color: white;
+	}
+}
+
+@mixin margins {
+	width: 710px;
+	margin: 30px auto;
+	header .sovattha-sok-logo {
+		margin: auto;
+	}
+	#intro.sovattha-sok {
+		width: 680px;
+		height: 445px;
+	}
+	dl {
+		margin: auto;
+		padding-top: 50px;
+	}
+	dt {
+		font-weight: bold;
+	}
+	dd {
+		margin: 20px;
+	}
+	#intro {
+		article {
+			margin-left: 290px;
+			margin-right: 30px;
+			blockquote {
+				clear: both;
+				float: left;
+				margin: 10px 0;
+			}
+		}
+		padding: 10px;
+	}
+}
+
+@mixin backgrounds {
+	img, .dynamic-bg {
+		-webkit-animation: coloredImage 36s infinite;
+	}
+	/*
+	a {
+		-webkit-animation: coloredSpans 36s infinite;
+	}
+	*/
+	#intro {
+		border-radius:20px;
+		box-shadow:
+		0px 2px 2px 0px rgba(0, 0, 0, 0.5),
+		0px 2px 2px 0px rgba(255, 255, 255, 0.5) inset;
+	}
+	.sec-container {
+		background-color:#777;
+		border-radius:20px;
+		box-shadow:
+		0px 2px 2px 0px rgba(0, 0, 0, 0.5),
+		0px 2px 2px 0px rgba(255, 255, 255, 0.5); 
+	}
+}
+
+body {
+	@include pos;
+	@include typo;
+	@include colors;
+	@include margins;
+	@include backgrounds;
+}
+@include dynamic-bg;

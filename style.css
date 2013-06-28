@@ -1,0 +1,176 @@
+.sovattha-sok, .sovattha-sok-audi-tt, .sovattha-sok-logo, .twitter-logo, .facebook-logo, .geekeries-logo, .html5-logo, .linkedin-logo, .sovattha-sok-audi-tt-logo, .google-plus-logo, .moncv-logo {
+  background: url(sprites.png) no-repeat; }
+
+.sovattha-sok {
+  background-position: 0 0;
+  width: 700px;
+  height: 467px; }
+
+.sovattha-sok-audi-tt {
+  background-position: 0 -468px;
+  width: 700px;
+  height: 327px; }
+
+.sovattha-sok-logo {
+  background-position: 0 -803px;
+  width: 509px;
+  height: 212px; }
+
+.twitter-logo {
+  background-position: -149px -1031px;
+  width: 19px;
+  height: 19px; }
+
+.facebook-logo {
+  background-position: -128px -1029px;
+  width: 19px;
+  height: 19px; }
+
+.geekeries-logo {
+  background-position: 0 -1031px;
+  width: 49px;
+  height: 19px; }
+
+.html5-logo {
+  background-position: -83px -1031px;
+  width: 19px;
+  height: 19px; }
+
+.linkedin-logo {
+  background-position: -63px -1031px;
+  width: 19px;
+  height: 19px; }
+
+.sovattha-sok-audi-tt-logo {
+  background-position: -170.00006px -1037px;
+  width: 18px;
+  height: 13px; }
+
+.google-plus-logo {
+  background-position: -104.00006px -1031px;
+  width: 19px;
+  height: 19px; }
+
+.moncv-logo {
+  background-position: -193px -1031px;
+  width: 92px;
+  height: 19px; }
+
+body {
+  font-family: Arial;
+  font-size: 1em;
+  width: 710px;
+  margin: 30px auto;
+  /*
+  a {
+  	-webkit-animation: coloredSpans 36s infinite;
+  }
+  */ }
+  body aside {
+    float: left; }
+    body aside div {
+      float: left;
+      margin-right: 10px; }
+  body footer div {
+    float: left;
+    margin-right: 10px; }
+  body h1 {
+    text-align: center; }
+  body a {
+    font-decoration: none; }
+  body aside a {
+    white-space: nowrap; }
+  body blockquote {
+    font-style: italic; }
+  body body, body a {
+    color: #222; }
+  body a:hover {
+    background-color: lightblue; }
+  body #intro {
+    color: white; }
+  body header .sovattha-sok-logo {
+    margin: auto; }
+  body #intro.sovattha-sok {
+    width: 680px;
+    height: 445px; }
+  body dl {
+    margin: auto;
+    padding-top: 50px; }
+  body dt {
+    font-weight: bold; }
+  body dd {
+    margin: 20px; }
+  body #intro {
+    padding: 10px; }
+    body #intro article {
+      margin-left: 290px;
+      margin-right: 30px; }
+      body #intro article blockquote {
+        clear: both;
+        float: left;
+        margin: 10px 0; }
+  body img, body .dynamic-bg {
+    -webkit-animation: coloredImage 36s infinite; }
+  body #intro {
+    border-radius: 20px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.5), 0px 2px 2px 0px rgba(255, 255, 255, 0.5) inset; }
+  body .sec-container {
+    background-color: #777;
+    border-radius: 20px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.5), 0px 2px 2px 0px rgba(255, 255, 255, 0.5); }
+
+@-webkit-keyframes coloredSpans {
+  0% {
+    background: #97e733; }
+
+  12% {
+    background: #47ff74; }
+
+  25% {
+    background: #3cf1f3; }
+
+  37% {
+    background: #77cbfd; }
+
+  50% {
+    background: #f19efd; }
+
+  62% {
+    background: #fa87fd; }
+
+  75% {
+    background: #fb9594; }
+
+  87% {
+    background: #fdba3e; }
+
+  100% {
+    background: #97e733; } }
+
+@-webkit-keyframes coloredImage {
+  0% {
+    -webkit-filter: hue-rotate(0deg); }
+
+  12% {
+    -webkit-filter: hue-rotate(45deg); }
+
+  25% {
+    -webkit-filter: hue-rotate(90deg); }
+
+  37% {
+    -webkit-filter: hue-rotate(135deg); }
+
+  50% {
+    -webkit-filter: hue-rotate(180deg); }
+
+  62% {
+    -webkit-filter: hue-rotate(225deg); }
+
+  75% {
+    -webkit-filter: hue-rotate(270deg); }
+
+  87% {
+    -webkit-filter: hue-rotate(315deg); }
+
+  100% {
+    -webkit-filter: hue-rotate(350deg); } }
