@@ -40,7 +40,7 @@
 		float: left;
 		margin-right: 10px;
 	}
-	@media all and (max-device-width: 480px) {
+	@media all and (max-width: 680px) {
 		footer {
 			clear: both;
 		}
@@ -79,7 +79,7 @@
 	#intro {
 		color: white;
 	}
-	@media all and (max-device-width: 480px) {
+	@media all and (max-width: 680px) {
 		#intro {
 			color: #222;
 		}
@@ -88,6 +88,9 @@
 
 @mixin margins {
 	width: 710px;
+	@media all and (max-width: 680px) {
+		width: auto;
+	}
 	margin: 30px auto;
 	header .sovattha-sok-logo {
 		margin: auto;
@@ -95,13 +98,17 @@
 	#intro.sovattha-sok {
 		width: 680px;
 		height: 445px;
-		@media all and (max-device-width: 480px) {
+		@media all and (max-width: 680px) {
+			width: auto;
 			height: auto;
 		}
 	}
 	dl {
 		margin: auto;
 		padding-top: 50px;
+		@media all and (max-width: 680px) {
+			padding-top: 0;
+		}
 	}
 	dt {
 		font-weight: bold;
@@ -113,13 +120,18 @@
 		article {
 			margin-left: 290px;
 			margin-right: 30px;
-			@media all and (max-device-width: 480px) {
+			@media all and (max-width: 680px) {
 				margin: auto;
 			}
 			blockquote {
 				clear: both;
 				float: left;
 				margin: 10px 0;
+			}
+			@media all and (max-width: 680px) {
+				blockquote {
+					float: none;
+				}
 			}
 		}
 	}
@@ -129,9 +141,12 @@
 }
 
 @mixin backgrounds {
-	@media all and (max-device-width: 480px) {
+	@media all and (max-width: 680px) {
 		.sovattha-sok {
 			background: none;
+		}
+		.sovattha-sok-audi-tt {
+			display: none;
 		}
 	}
 	img, .dynamic-bg {

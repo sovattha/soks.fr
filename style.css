@@ -74,7 +74,7 @@ body {
   body footer div {
     float: left;
     margin-right: 10px; }
-  @media all and (max-device-width: 720px) {
+  @media all and (max-width: 680px) {
     body footer {
       clear: both; } }
   body nav {
@@ -93,20 +93,27 @@ body {
     background-color: lightblue; }
   body #intro {
     color: white; }
-  @media all and (max-device-width: 720px) {
+  @media all and (max-width: 680px) {
     body #intro {
       color: #222; } }
+  @media all and (max-width: 680px) {
+    body {
+      width: auto; } }
   body header .sovattha-sok-logo {
     margin: auto; }
   body #intro.sovattha-sok {
     width: 680px;
     height: 445px; }
-    @media all and (max-device-width: 720px) {
+    @media all and (max-width: 680px) {
       body #intro.sovattha-sok {
+        width: auto;
         height: auto; } }
   body dl {
     margin: auto;
     padding-top: 50px; }
+    @media all and (max-width: 680px) {
+      body dl {
+        padding-top: 0; } }
   body dt {
     font-weight: bold; }
   body dd {
@@ -114,18 +121,23 @@ body {
   body #intro article {
     margin-left: 290px;
     margin-right: 30px; }
-    @media all and (max-device-width: 720px) {
+    @media all and (max-width: 680px) {
       body #intro article {
         margin: auto; } }
     body #intro article blockquote {
       clear: both;
       float: left;
       margin: 10px 0; }
+    @media all and (max-width: 680px) {
+      body #intro article blockquote {
+        float: none; } }
   body section, body aside, body footer {
     padding: 10px; }
-  @media all and (max-device-width: 720px) {
+  @media all and (max-width: 680px) {
     body .sovattha-sok {
-      background: none; } }
+      background: none; }
+    body .sovattha-sok-audi-tt {
+      display: none; } }
   body img, body .dynamic-bg {
     -webkit-animation: coloredImage 36s infinite; }
   body #intro {
