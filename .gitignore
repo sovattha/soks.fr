@@ -6,3 +6,4 @@ public/video/*.mp4
 views/*.html
 views/*.html
 public/video/*.mov
+views/video/*.html

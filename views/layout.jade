@@ -1,0 +1,43 @@
+doctype 5
+html(lang='fr')  
+  head
+    title #{title}
+    link(rel='openid.server', href='http://www.myopenid.com/server')
+    link(rel='openid.delegate', href='http://www.google.com/profiles/sovatthasok')
+    meta(charset='utf-8')
+    meta(name='author', content='Sovattha Sok')
+    meta(name='keywords', content='Sovattha Sok')
+    meta(name='description', content='Sovattha Sok, Java & Javascript developer')
+    meta(name='robots', content='all')
+    //if lt IE 9
+      script(src='http://html5shiv.googlecode.com/svn/trunk/html5.js')
+    link(href='/style.css', type='text/css', rel='stylesheet', media='all')
+  body
+    header
+      a(href='/')
+        div.sovattha-sok-logo.dynamic-bg
+      h1 #{title}
+    block content
+    aside
+      include navigation               
+    block foot
+      footer
+        dl
+          dt W3C best practices
+          dd
+            div.html5-logo.dynamic-bg
+            a(href='http://validator.w3.org/check?uri=http%3A%2F%2Fwww.soks.fr%2F') The HTML5 code of my website is W3C valid
+            .
+          dd
+            a(href='http://www.w3.org/html/wg/drafts/html/master/grouping-content.html#the-dt-element') Why did I use &lt;dt&gt; and not &lt;li&gt;?
+          dd This website <strong>tries to</strong> be compliant with the 
+            a(href='http://en.wikipedia.org/wiki/Responsive_Web_Design') responsive web design patterns
+            .
+          div.sovattha-sok-audi-tt.dynamic-bg.drop-shadow
+      script
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        try {
+          var pageTracker = _gat._getTracker("UA-88570-8");
+          pageTracker._trackPageview();
+        } catch(err) {}
