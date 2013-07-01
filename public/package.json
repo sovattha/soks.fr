@@ -1,0 +1,15 @@
+{
+  "name": "soks.fr",
+  "version": "0.1.0",
+  "author": "Sovattha SOK <m@soks.fr>",
+  "description": "My personal website",
+  "contributors": [ 
+    {
+      "name": "Sovattha SOK",
+      "email": "m@soks.fr"
+    } 
+  ],
+  "dependencies" : {
+    "jade":  "0.32.0"
+  }
+}
