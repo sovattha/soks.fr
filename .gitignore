@@ -1,4 +1,8 @@
-.sass-cache/*
 .project
-video/*.mp4
-video/*.mov
+node_modules/*
+public/.sass-cache/*
+public/video/*.mp4
+.sass-cache/*
+views/*.html
+views/*.html
+public/video/*.mov
