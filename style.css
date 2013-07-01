@@ -79,6 +79,8 @@ body {
       clear: both; } }
   body nav {
     width: 300px; }
+  body #video video {
+    width: 680px; }
   body h1 {
     text-align: center; }
   body a {
@@ -141,7 +143,8 @@ body {
   body img, body .dynamic-bg {
     -webkit-animation: coloredImage 36s infinite; }
   body #intro {
-    border-radius: 20px;
+    border-radius: 20px; }
+  body .drop-shadow {
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.5), 0px 2px 2px 0px rgba(255, 255, 255, 0.5) inset; }
   body .sec-container {
     background-color: #777;

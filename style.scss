@@ -48,6 +48,9 @@
 	nav {
 		width: 300px;
 	}
+	#video video {
+	  width: 680px;
+	}
 }
 
 @mixin typo {
@@ -159,9 +162,11 @@
 	*/
 	#intro {
 		border-radius:20px;
-		box-shadow:
-		0px 2px 2px 0px rgba(0, 0, 0, 0.5),
-		0px 2px 2px 0px rgba(255, 255, 255, 0.5) inset;
+	}
+	.drop-shadow {
+	  box-shadow:
+    0px 2px 2px 0px rgba(0, 0, 0, 0.5),
+    0px 2px 2px 0px rgba(255, 255, 255, 0.5) inset;
 	}
 	.sec-container {
 		background-color:#777;
