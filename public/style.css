@@ -66,11 +66,16 @@ body {
   	-webkit-animation: coloredSpans 36s infinite;
   }
   */ }
-  body aside {
+  body aside nav:first-child {
     float: left; }
-    body aside div {
-      float: left;
-      margin-right: 10px; }
+  body aside nav:last-child {
+    float: right; }
+  body aside nav div {
+    float: left;
+    margin-right: 10px; }
+  body footer {
+    clear: both;
+    float: left; }
   body footer div {
     float: left;
     margin-right: 10px; }
@@ -89,6 +94,9 @@ body {
     white-space: nowrap; }
   body blockquote {
     font-style: italic; }
+  body footer {
+    font-size: 0.7em;
+    line-height: 0.5em; }
   body body, body a {
     color: #222; }
   body a:hover {
@@ -110,9 +118,13 @@ body {
       body #intro.sovattha-sok {
         width: auto;
         height: auto; } }
+  body dt {
+    padding: 10px; }
+  body dd {
+    padding: 0 10px; }
   body dl {
     margin: auto;
-    padding-top: 50px; }
+    padding-bottom: 10px; }
     @media all and (max-width: 680px) {
       body dl {
         padding-top: 0; } }
@@ -140,12 +152,16 @@ body {
       background: none; }
     body .sovattha-sok-audi-tt {
       display: none; } }
+  body nav dt {
+    background-color: lightsteelblue; }
   body img, body .dynamic-bg {
     -webkit-animation: coloredImage 36s infinite; }
-  body #intro {
-    border-radius: 20px; }
   body .drop-shadow {
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.5), 0px 2px 2px 0px rgba(255, 255, 255, 0.5) inset; }
+  body .round-corner {
+    border-radius: 20px; }
+  body .top-round-corner {
+    border-radius: 20px 20px 0 0; }
   body .sec-container {
     background-color: #777;
     border-radius: 20px;

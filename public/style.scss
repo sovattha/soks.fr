@@ -29,12 +29,23 @@
 }
 
 @mixin pos {
-	aside {
-		float: left;
-		div {
-			float: left;
-			margin-right: 10px;
-		}
+  aside {
+    nav:first-child {
+      float: left;
+    }
+    nav:last-child {
+      float: right;
+    }
+    nav {
+  		div {
+  			float: left;
+  			margin-right: 10px;
+  		}
+    }
+  }
+	footer {
+	  clear: both;
+	  float: left;
 	}
 	footer div {
 		float: left;
@@ -67,6 +78,10 @@
 	}
 	blockquote {
 		font-style: italic;
+	}
+	footer {
+	  font-size: 0.7em;
+	  line-height: 0.5em;
 	}
 }
 
@@ -106,9 +121,15 @@
 			height: auto;
 		}
 	}
+	dt {
+	  padding: 10px;
+	}
+	dd {
+	  padding: 0 10px;
+	}
 	dl {
 		margin: auto;
-		padding-top: 50px;
+		padding-bottom: 10px;
 		@media all and (max-width: 680px) {
 			padding-top: 0;
 		}
@@ -152,6 +173,9 @@
 			display: none;
 		}
 	}
+	nav dt {
+	  background-color: lightsteelblue;
+	}
 	img, .dynamic-bg {
 		-webkit-animation: coloredImage 36s infinite;
 	}
@@ -160,17 +184,20 @@
 		-webkit-animation: coloredSpans 36s infinite;
 	}
 	*/
-	#intro {
-		border-radius:20px;
-	}
 	.drop-shadow {
 	  box-shadow:
     0px 2px 2px 0px rgba(0, 0, 0, 0.5),
     0px 2px 2px 0px rgba(255, 255, 255, 0.5) inset;
 	}
+	.round-corner {
+		border-radius: 20px;
+	}
+	.top-round-corner {
+		border-radius: 20px 20px 0 0;
+	}
 	.sec-container {
 		background-color:#777;
-		border-radius:20px;
+		border-radius: 20px;
 		box-shadow:
 		0px 2px 2px 0px rgba(0, 0, 0, 0.5),
 		0px 2px 2px 0px rgba(255, 255, 255, 0.5); 

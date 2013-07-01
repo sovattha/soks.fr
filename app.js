@@ -11,7 +11,7 @@ app.set('views', __dirname + '/views');
 app.use(express.compress());
 
 // Handle GET requests on /
-app.get('/', function(req, res){res.render('index.jade', {title: 'Sovattha Sok, Java & Javascript web developer'});});
+app.get('/', function(req, res){res.render('index.jade');});
 app.get('/video', function(req, res){res.render('video/video.jade', {title: 'Sovattha Sok, my videos'});});
 
 // Serve up content from public directory
