@@ -1,1 +1,4 @@
 .sass-cache/*
+.project
+video/*.mp4
+video/*.mov
