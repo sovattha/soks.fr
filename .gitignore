@@ -7,3 +7,4 @@ views/*.html
 views/*.html
 public/video/*.mov
 views/video/*.html
+public/css/.sass-cache/*

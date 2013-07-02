@@ -46,6 +46,7 @@
 	footer {
 	  clear: both;
 	  float: left;
+	  width: 680px;
 	}
 	footer div {
 		float: left;
@@ -73,6 +74,9 @@
 	a {
 		font-decoration: none;
 	}
+	nav dt {
+	  text-align: center;
+	}
 	aside a {
 		white-space: nowrap;
 	}
@@ -88,6 +92,9 @@
 @mixin colors {
 	body, a {
 		color: #222;
+	}
+	nav dt {
+	  color: darkorange;
 	}
 	a {
 		&:hover {
@@ -138,7 +145,13 @@
 		font-weight: bold;
 	}
 	dd {
-		margin: 20px;
+		margin: 1em;
+	}
+	footer {
+	  margin-top: 1em;
+  	dd {
+  	  margin: 1em;
+  	}
 	}
 	#intro {
 		article {
@@ -165,6 +178,9 @@
 }
 
 @mixin backgrounds {
+  background-color: #63aee0;
+  background-image: url('/main-background.jpg');
+  background-repeat: no-repeat;
 	@media all and (max-width: 680px) {
 		.sovattha-sok {
 			background: none;
@@ -173,17 +189,17 @@
 			display: none;
 		}
 	}
-	nav dt {
-	  background-color: lightsteelblue;
+	nav {
+	  dl {
+	    background-color: white;
+	  }
+	  dt {
+	    background-color: lightsteelblue;
+	  }
 	}
 	img, .dynamic-bg {
 		-webkit-animation: coloredImage 36s infinite;
 	}
-	/*
-	a {
-		-webkit-animation: coloredSpans 36s infinite;
-	}
-	*/
 	.drop-shadow {
 	  box-shadow:
     0px 2px 2px 0px rgba(0, 0, 0, 0.5),
@@ -202,6 +218,9 @@
 		0px 2px 2px 0px rgba(0, 0, 0, 0.5),
 		0px 2px 2px 0px rgba(255, 255, 255, 0.5); 
 	}
+	footer {
+	  background-color: rgba(0, 0, 220, 0.5);
+	}
 }
 
 body {
@@ -211,4 +230,4 @@ body {
 	@include margins;
 	@include backgrounds;
 }
-@include dynamic-bg;
+//@include dynamic-bg;

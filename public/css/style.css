@@ -1,0 +1,138 @@
+.sovattha-sok, .sovattha-sok-audi-tt, .sovattha-sok-logo, .twitter-logo, .facebook-logo, .geekeries-logo, .html5-logo, .linkedin-logo, .sovattha-sok-audi-tt-logo, .google-plus-logo, .moncv-logo {
+  background: url(sprites.png) no-repeat; }
+
+.sovattha-sok {
+  background-position: 0 0;
+  width: 700px;
+  height: 467px; }
+
+.sovattha-sok-audi-tt {
+  background-position: 0 -468px;
+  width: 700px;
+  height: 327px; }
+
+.sovattha-sok-logo {
+  background-position: 0 -803px;
+  width: 509px;
+  height: 212px; }
+
+.twitter-logo {
+  background-position: -149px -1031px;
+  width: 19px;
+  height: 19px; }
+
+.facebook-logo {
+  background-position: -128px -1029px;
+  width: 19px;
+  height: 19px; }
+
+.geekeries-logo {
+  background-position: 0 -1031px;
+  width: 49px;
+  height: 19px; }
+
+.html5-logo {
+  background-position: -83px -1031px;
+  width: 19px;
+  height: 19px; }
+
+.linkedin-logo {
+  background-position: -63px -1031px;
+  width: 19px;
+  height: 19px; }
+
+.sovattha-sok-audi-tt-logo {
+  background-position: -170.00006px -1037px;
+  width: 18px;
+  height: 13px; }
+
+.google-plus-logo {
+  background-position: -104.00006px -1031px;
+  width: 19px;
+  height: 19px; }
+
+.moncv-logo {
+  background-position: -193px -1031px;
+  width: 92px;
+  height: 19px; }
+
+body .dynamic-bg {
+  -webkit-animation: coloredImage 36s infinite; }
+body .drop-shadow {
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.5), 0px 2px 2px 0px rgba(255, 255, 255, 0.5) inset; }
+body .round-corner {
+  border-radius: 20px; }
+body .top-round-corner {
+  border-radius: 20px 20px 0 0; }
+
+body {
+  padding-top: 60px;
+  /* 60px to make the container go all the way to the bottom of the topbar */ }
+
+nav a {
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  margin: 1em; }
+  nav a .button-icon {
+    display: inline-block;
+    margin-right: 1em; }
+
+i {
+  margin-right: 1em; }
+
+@-webkit-keyframes coloredSpans {
+  0% {
+    background: #97e733; }
+
+  12% {
+    background: #47ff74; }
+
+  25% {
+    background: #3cf1f3; }
+
+  37% {
+    background: #77cbfd; }
+
+  50% {
+    background: #f19efd; }
+
+  62% {
+    background: #fa87fd; }
+
+  75% {
+    background: #fb9594; }
+
+  87% {
+    background: #fdba3e; }
+
+  100% {
+    background: #97e733; } }
+
+@-webkit-keyframes coloredImage {
+  0% {
+    -webkit-filter: hue-rotate(0deg); }
+
+  12% {
+    -webkit-filter: hue-rotate(45deg); }
+
+  25% {
+    -webkit-filter: hue-rotate(90deg); }
+
+  37% {
+    -webkit-filter: hue-rotate(135deg); }
+
+  50% {
+    -webkit-filter: hue-rotate(180deg); }
+
+  62% {
+    -webkit-filter: hue-rotate(225deg); }
+
+  75% {
+    -webkit-filter: hue-rotate(270deg); }
+
+  87% {
+    -webkit-filter: hue-rotate(315deg); }
+
+  100% {
+    -webkit-filter: hue-rotate(350deg); } }

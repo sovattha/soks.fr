@@ -1,12 +1,15 @@
 extends layout
 
+block header
+  img.sovattha-sok.drop-shadow
+
 block content
-  section#intro.sovattha-sok.drop-shadow.round-corner
+  section
     h1 Java &amp; Javascript web developer
-    article
-      blockquote Hello, my name is Sovattha Sok.
-      blockquote I am a French software engineer specialized in web development. I am working in Switzerland as an IT consultant since 2003 for clients from Geneva, Nyon or Lausanne. My career is currently evolving at 
-        a(href='http://www.ctp.com') 
-          | CTP
-        .
-      blockquote I started as a JEE developer and I am continuously improving my Javascript skills to an advanced level.
+    article.lead
+      cite
+        p.lead Hello, my name is Sovattha Sok.
+        p.lead I am a French software engineer specialized in web development. I am working in Switzerland as an IT consultant since 2003 for clients from Geneva, Nyon or Lausanne. My career is currently evolving at 
+          a(href='http://www.ctp.com') CTP
+          .
+        p.lead I started as a JEE developer and I am continuously improving my Javascript skills to an advanced level.
