@@ -5,7 +5,7 @@
   a {
     color: darkblue;
   }
-  h1, cite strong {
+  .hero-unit h1, h1, cite strong {
     color: white;
   }
 }
@@ -33,6 +33,10 @@
   background-color: #5cace1;
   background-image: url('/css/main-background.jpg');
   background-repeat: no-repeat;
+  .hero-unit {
+    background: none;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
   .drop-shadow {
     box-shadow:
     0px 2px 2px 0px rgba(0, 0, 0, 0.5),
@@ -52,5 +56,10 @@
 body {
 	@include backgrounds;
 	@include colors;
+	
+	.sovattha-sok-logo {
+	  height: 160px;
+	  margin-top: -50px;
+	}
 }
 @include pos;

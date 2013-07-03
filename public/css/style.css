@@ -61,6 +61,9 @@ body {
   background-image: url("/css/main-background.jpg");
   background-repeat: no-repeat;
   color: black; }
+  body .hero-unit {
+    background: none;
+    background-color: rgba(255, 255, 255, 0.1); }
   body .drop-shadow {
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.5), 0px 2px 2px 0px rgba(255, 255, 255, 0.5) inset; }
   body .round-corner {
@@ -71,8 +74,11 @@ body {
     text-shadow: 0 0 0.2em #333, 0 0 0.2em #333, 0 0 0.2em #333; }
   body a {
     color: darkblue; }
-  body h1, body cite strong {
+  body .hero-unit h1, body h1, body cite strong {
     color: white; }
+  body .sovattha-sok-logo {
+    height: 160px;
+    margin-top: -50px; }
 
 body {
   padding-top: 60px;
