@@ -25,9 +25,10 @@ html(lang='en')
         div.sovattha-sok-logo
         h1 #{title}
       block content
-      aside.span8
-        include navigation               
+      block navigation
+        aside.span8
+          include navigation
       block foot
         footer
           include footer
-      div.sovattha-sok-audi-tt.pull-right.img-circle
+        div.sovattha-sok-audi-tt.pull-right.img-circle
