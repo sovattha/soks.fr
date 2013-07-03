@@ -74,7 +74,7 @@ body {
     text-shadow: 0 0 0.2em #333, 0 0 0.2em #333, 0 0 0.2em #333; }
   body a {
     color: darkblue; }
-  body .hero-unit h1, body h1, body cite strong {
+  body .hero-unit h1, body h1, body strong {
     color: white; }
   body .sovattha-sok-logo {
     height: 160px;
@@ -95,3 +95,6 @@ nav a {
 
 i {
   margin-right: 1em; }
+
+.video {
+  width: 720px; }
