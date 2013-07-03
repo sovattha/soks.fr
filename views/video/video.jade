@@ -1,25 +1,42 @@
 extends ../main
 
 block header
-  img.sovattha-sok-audi-tt.dynamic-bg
+  div.sovattha-sok-logo
 
 block content
   section#video
     article
-      h2 Presentation of Cachin Wake School
-      video(controls='controls', poster='/video/cws.jpg', width='700')
-        source(src='/video/cws.galaxysiii.mp4')
-        source(src='/video/cws.iphone5.mp4')
-        source(src='/video/cws.mov')
-    article
-      h2 Harlem Shake for the 30th birthday of my sister
-      video(controls='controls', poster='/video/harlem-shake.jpg', width='700')
-        source(src='/video/harlem-shake.galaxysiii.mp4')
-        source(src='/video/harlem-shake.iphone5.mp4')
-        source(src='/video/harlem-shake.mov')
-    article
-      h2 Karting event 2014 by CTP
-      video(controls='controls', poster='/video/karting-event-2014-ctp.jpg', width='700')
-        source(src='/video/karting-event-2014-ctp.galaxysiii.mp4')
-        source(src='/video/karting-event-2014-ctp.iphone5.mp4')
-        source(src='/video/karting-event-2014-ctp.mov')
+      ul.thumbnails
+        li.span4
+          div.thumbnail
+            a.btn(href='#cws', role='button', data-toggle='modal')
+              img(src='/video/cws.jpg')
+              h2 Cachin Wake School
+              p A video I have made for my friend Remi Cachin, who is wakeboard teacher. Wakeboard, wakesurf and a lot of fun inside!
+        li.span4
+          div.thumbnail
+            a.btn(href='#harlem-shake', role='button', data-toggle='modal')
+              img(src='/video/harlem-shake.jpg')
+              h2 Harlem Shake
+              p For the 30th birthday of my sister, we spontaneously thought about making our own version of the famous Harlem Shake!
+        li.span4
+          div.thumbnail
+            a.btn(href='#kart', role='button', data-toggle='modal')
+              img(src='/video/karting-event-2014-ctp.jpg')
+              h2 CTP karting 2013
+              p Every year at CTP, we are competing in an amazing race. This year was particularly tough due to the rainy conditions...
+  div#cws.modal.hide.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+    video(controls='controls', poster='/video/cws.jpg', width='720')
+      source(src='/video/cws.galaxysiii.mp4')
+      source(src='/video/cws.iphone5.mp4')
+      source(src='/video/cws.mov')
+  div#harlem-shake.modal.hide.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+    video(controls='controls', poster='/video/harlem-shake.jpg', width='720')
+      source(src='/video/harlem-shake.galaxysiii.mp4')
+      source(src='/video/harlem-shake.iphone5.mp4')
+      source(src='/video/harlem-shake.mov')
+  div#kart.modal.hide.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+    video(controls='controls', poster='/video/karting-event-2014-ctp.jpg', width='720')
+      source(src='/video/karting-event-2014-ctp.galaxysiii.mp4')
+      source(src='/video/karting-event-2014-ctp.iphone5.mp4')
+      source(src='/video/karting-event-2014-ctp.mov')
