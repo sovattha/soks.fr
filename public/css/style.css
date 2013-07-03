@@ -1,4 +1,4 @@
-.sovattha-sok, .sovattha-sok-audi-tt, .sovattha-sok-logo, .twitter-logo, .facebook-logo, .geekeries-logo, .html5-logo, .linkedin-logo, .sovattha-sok-audi-tt-logo, .google-plus-logo, .moncv-logo {
+.sovattha-sok, .sovattha-sok-audi-tt, .twitter-logo, .facebook-logo, .geekeries-logo, .html5-logo, .linkedin-logo, .sovattha-sok-audi-tt-logo, .google-plus-logo, .moncv-logo, .sovattha-sok-logo {
   background: url(sprites.png) no-repeat; }
 
 .sovattha-sok {
@@ -10,11 +10,6 @@
   background-position: 0 -468px;
   width: 700px;
   height: 327px; }
-
-.sovattha-sok-logo {
-  background-position: 0 -803px;
-  width: 509px;
-  height: 212px; }
 
 .twitter-logo {
   background-position: -149px -1031px;
@@ -42,12 +37,12 @@
   height: 19px; }
 
 .sovattha-sok-audi-tt-logo {
-  background-position: -170.00006px -1037px;
+  background-position: -170px -1037px;
   width: 18px;
   height: 13px; }
 
 .google-plus-logo {
-  background-position: -104.00006px -1031px;
+  background-position: -104px -1031px;
   width: 19px;
   height: 19px; }
 
@@ -56,12 +51,28 @@
   width: 92px;
   height: 19px; }
 
-body .drop-shadow {
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.5), 0px 2px 2px 0px rgba(255, 255, 255, 0.5) inset; }
-body .round-corner {
-  border-radius: 20px; }
-body .top-round-corner {
-  border-radius: 20px 20px 0 0; }
+.sovattha-sok-logo {
+  background-position: 0 -798px;
+  width: 509px;
+  height: 212px; }
+
+body {
+  background-color: #5cace1;
+  background-image: url("/css/main-background.jpg");
+  background-repeat: no-repeat;
+  color: black; }
+  body .drop-shadow {
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.5), 0px 2px 2px 0px rgba(255, 255, 255, 0.5) inset; }
+  body .round-corner {
+    border-radius: 20px; }
+  body .top-round-corner {
+    border-radius: 20px 20px 0 0; }
+  body h1, body strong {
+    text-shadow: 0 0 0.2em #333, 0 0 0.2em #333, 0 0 0.2em #333; }
+  body a {
+    color: darkblue; }
+  body h1, body cite strong {
+    color: white; }
 
 body {
   padding-top: 60px;

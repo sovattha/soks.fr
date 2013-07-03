@@ -1,25 +1,25 @@
-extends ../layout
+extends ../main
 
 block header
-  img.sovattha-sok-audi-tt.dynamic-bg.drop-shadow
+  img.sovattha-sok-audi-tt.dynamic-bg
 
 block content
-  section#video.drop-shadow
+  section#video
     article
       h2 Presentation of Cachin Wake School
-      video(controls='controls', poster='/video/cws.jpg')
+      video(controls='controls', poster='/video/cws.jpg', width='700')
         source(src='/video/cws.galaxysiii.mp4')
         source(src='/video/cws.iphone5.mp4')
         source(src='/video/cws.mov')
     article
       h2 Harlem Shake for the 30th birthday of my sister
-      video(controls='controls', poster='/video/harlem-shake.jpg')
+      video(controls='controls', poster='/video/harlem-shake.jpg', width='700')
         source(src='/video/harlem-shake.galaxysiii.mp4')
         source(src='/video/harlem-shake.iphone5.mp4')
         source(src='/video/harlem-shake.mov')
     article
       h2 Karting event 2014 by CTP
-      video(controls='controls', poster='/video/karting-event-2014-ctp.jpg')
+      video(controls='controls', poster='/video/karting-event-2014-ctp.jpg', width='700')
         source(src='/video/karting-event-2014-ctp.galaxysiii.mp4')
         source(src='/video/karting-event-2014-ctp.iphone5.mp4')
         source(src='/video/karting-event-2014-ctp.mov')

@@ -12,28 +12,13 @@ html(lang='en')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     //if lt IE 9
       script(src='http://html5shiv.googlecode.com/svn/trunk/html5.js')
-    link(href='/css/style.css', type='text/css', rel='stylesheet', media='all')
     link(href='/bootstrap/css/bootstrap.css', type='text/css', rel='stylesheet', media='all')
     link(href='/bootstrap/css/bootstrap-responsive.css', type='text/css', rel='stylesheet', media='all')
+    link(href='/css/style.css', type='text/css', rel='stylesheet', media='all')
     script(src='http://code.jquery.com/jquery.js')
     script(src='/bootstrap/js/bootstrap.js')
   body
-    div.navbar.navbar-inverse.navbar-fixed-top
-      div.navbar-inner
-        div.container
-          button.btn.btn-navbar(type='button', data-toggle='collapse', data-target='.nav-collapse')
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-          a.brand(href='/') Sovattha Sok
-          div.nav-collapse.collapse
-            ul.nav
-              li.active
-                a(href='#') Home
-              li.active
-                a(href='/video') Videos
-              //-li.active
-                a(href='/contact') Contact
+    include navbar
     div.container
       header
         block header
@@ -44,10 +29,3 @@ html(lang='en')
       block foot
         footer
           include footer
-        script.
-          var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-          document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          try {
-            var pageTracker = _gat._getTracker("UA-88570-8");
-            pageTracker._trackPageview();
-          } catch(err) {}
