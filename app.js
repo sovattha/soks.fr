@@ -13,18 +13,10 @@ app.use(express.compress());
 
 // Handle GET requests on /
 app.get('/', function(req, res) {
-	console.log("Index");
 	res.render('index.jade', {title: 'Java & Javascript web developer'});
 });
 app.get('/video', function(req, res) {
-	console.log("Video");
 	res.render('video/video.jade', {title: 'My videos'});
-});
-app.get('/sprites.png', function(req, res) {
-	console.log("Sprites");
-    var img = fs.readFileSync('./public/sprites.png');
-    res.writeHead(200, {'Content-Type': 'image/png' });
-    res.end(img, 'binary');
 });
 
 // Serve up content from public directory
