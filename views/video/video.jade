@@ -4,20 +4,17 @@ block content
   section#video
     article
       ul.thumbnails
-        li.span4
-          div.thumbnail
+        li
             a.btn(href='#cws', role='button', data-toggle='modal')
               img(src='/video/cws.jpg')
               h2 Cachin Wake School
               p A video I have made for my friend Remi Cachin, who is wakeboard teacher. Wakeboard, wakesurf and a lot of fun inside!
-        li.span4
-          div.thumbnail
+        li
             a.btn(href='#harlem-shake', role='button', data-toggle='modal')
               img(src='/video/harlem-shake.jpg')
               h2 Harlem Shake
               p For the 30th birthday of my sister, we spontaneously thought about making our own version of the famous Harlem Shake!
-        li.span4
-          div.thumbnail
+        li
             a.btn(href='#kart', role='button', data-toggle='modal')
               img(src='/video/karting-event-2014-ctp.jpg')
               h2 CTP karting 2013
@@ -27,16 +24,16 @@ block content
       source(src='/video/cws.galaxysiii.mp4')
       source(src='/video/cws.iphone5.mp4')
       source(src='/video/cws.mov')
-    a(href='/video').btn.pull-right Close
+    a(href='/video').btn.pull-right.close Close
   div#harlem-shake.video.modal.hide.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
     video(controls='controls', poster='/video/harlem-shake.jpg', width='720')
       source(src='/video/harlem-shake.galaxysiii.mp4')
       source(src='/video/harlem-shake.iphone5.mp4')
       source(src='/video/harlem-shake.mov')
-    a(href='/video').btn.pull-right Close
+    a(href='/video').btn.pull-right.close Close
   div#kart.video.modal.hide.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
     video(controls='controls', poster='/video/karting-event-2014-ctp.jpg', width='720')
       source(src='/video/karting-event-2014-ctp.galaxysiii.mp4')
       source(src='/video/karting-event-2014-ctp.iphone5.mp4')
       source(src='/video/karting-event-2014-ctp.mov')
-    button(data-dismiss='modal', aria-hidden='true').btn.pull-right Close
+    button(data-dismiss='modal', aria-hidden='true').btn.pull-right.close Close
