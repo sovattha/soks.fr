@@ -20,9 +20,10 @@ html(lang='en')
   body
     include navbar
     div.container
-      header.page-header
+      header.page-header.hero-unit
         block header
-        div.sovattha-sok-logo
+        div.sovattha-sok-logo.hidden-phone
+        h1.visible-phone Sovattha Sok
         h1 #{title}
       block content
       block navigation
@@ -31,4 +32,4 @@ html(lang='en')
       block foot
         footer
           include footer
-        div.sovattha-sok-audi-tt.pull-right.img-circle
+        div.sovattha-sok-audi-tt.pull-right.img-circle.hidden-phone.hidden-tablet

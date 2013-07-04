@@ -83,6 +83,12 @@ body {
 body {
   padding-top: 60px;
   /* 60px to make the container go all the way to the bottom of the topbar */ }
+  @media (max-width: 979px) {
+    body {
+      padding-top: 0; } }
+
+.hero-unit {
+  padding: 30px; }
 
 nav a {
   display: inline-block;
@@ -96,5 +102,6 @@ nav a {
 i {
   margin-right: 1em; }
 
-.video {
-  width: 720px; }
+video, .video {
+  height: auto;
+  max-width: 100%; }
