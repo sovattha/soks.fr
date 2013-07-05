@@ -5,6 +5,9 @@ var express = require('express'),
 // Set path to the views (template) directory
 app.set('views', __dirname + '/views');
 
+// Enable pretty rendering by Jade
+app.locals.pretty = true;
+
 // Use compress middleware to gzip content
 app.use(express.compress());
 
