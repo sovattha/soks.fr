@@ -7,9 +7,16 @@ block navigation
 block content
   div.container
     div.marketing
-      h1 Whoops
+      h1 Not found 
+        span :(
       p.marketing-byline
-      | The page you are looking for cannot be found :(
+      | Sorry, but the page you were trying to view does not exist.
+      | It looks like this was the result of either:
+      ul
+        li a mistyped address
+        li an out-of-date link
+    script
+      var GOOG_FIXURL_LANG = (navigator.language || '').slice(0,2),GOOG_FIXURL_SITE = location.host;
+    script(src='//linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js')        
 
 block foot
-

@@ -70,11 +70,11 @@ body {
     border-radius: 20px; }
   body .top-round-corner {
     border-radius: 20px 20px 0 0; }
-  body h1, body strong {
+  body h1, body h2, body h3, body strong, body b {
     text-shadow: 0 0 0.2em #333, 0 0 0.2em #333, 0 0 0.2em #333; }
   body a {
     color: darkblue; }
-  body .hero-unit h1, body h1, body strong {
+  body .hero-unit h1, body h1, body h2, body h3, body strong, body b {
     color: white; }
   body .sovattha-sok-logo {
     height: 160px;

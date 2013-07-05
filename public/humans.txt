@@ -1,0 +1,21 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Name: Sovattha Sok
+    Role: Web programmer
+    Twitter: @geekeriescom
+    Contact: mail [at] soks.fr
+    Location: Annecy, France
+
+# THANKS
+
+    To the web gurus who created NodeJS, Bootstrap, SpritePad and co.
+
+# TECHNOLOGY COLOPHON
+
+    Standards: HTML5, CSS3
+    Client side: jQuery, Modernizr, HTML5 BoilerPlate, Bootstrap, Initializr, SASS
+    Server side: NodeJS, Jade template engine
+    IDE: Eclipse, Notepad++, GIT Extensions, Pixlr, FileZilla

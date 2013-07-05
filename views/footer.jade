@@ -4,15 +4,16 @@ dl
     | W3C best practices about this website
   dd
     div.dynamic-bg
-    a(href='//validator.w3.org/check?uri=http%3A%2F%2Fwww.soks.fr%2F') The 
+      | The 
       span.label.label-info HTML5
       |  code is 
-      span.label.label-info W3C
-      |  valid.
+      a(href='//validator.w3.org/check?uri=http%3A%2F%2Fwww.soks.fr%2F') 
+        span.label.label-info W3C
+        |  valid.
   dd The images are grouped altogether in a unique 
     a(href='/sprites.png') 
       span.label.label-info CSS sprite
-      |  thanks to 
+    |  thanks to 
     a(href='//spritepad.wearekiss.com/')
       span.label.label-info SpritePad
     |. 
@@ -28,11 +29,24 @@ dl
       .
   dd Thanks to 
     a(href='//twitter.github.io/bootstrap/') 
-      span.label.label-info Bootstrap
+      span.label.label-info Bootstrap 
+    |  plus some inspiration from
+    a(href='//www.initializr.com/')  
+      span.label.label-info Initializr
+    |  and 
+    a(href='//html5boilerplate.com/', data-toggle='tooltip', title='HTML5 BoilerPlate')
+      span.label.label-info H5BP
     , this website is compliant with the 
     a(href='//en.wikipedia.org/wiki/Responsive_Web_Design') 
       span.label.label-info responsive web design patterns
     .
+  dd A 
+    a(href='/humans.txt')
+      span.label.label-info humans.txt
+    has been created in order because 
+      a(href='humanstxt.org/')
+        cite "We are People, Not Machines"
+    |. 
   dt 
     i.icon-ok
     | Technical details about this website
@@ -46,14 +60,17 @@ dl
       a(href='//jade-lang.com/')
         span.label.label-info Jade template engine
       .
+  dd It has been created using the softwares 
+    a(href='//eclipse.org/')
+      span.label.label-info Eclipse
+    , 
+    a(href='//pixlr.com/')
+      span.label.label-info Pixlr
+    |  and 
+    a(href='//code.google.com/p/gitextensions/')
+      span.label.label-info GIT Extensions
+    | .
   dd The sources are hosted here at 
     a(href='//github.com/sovattha/soks.fr')
       span.label.label-info GitHub
-    | .      
-script.
-  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-  try {
-    var pageTracker = _gat._getTracker("UA-88570-8");
-    pageTracker._trackPageview();
-  } catch(err) {}
+    | .
