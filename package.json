@@ -10,7 +10,10 @@
     } 
   ],
   "dependencies" : {
-    "express" : "*",
-	  "jade":  "0.32.0"
+      "express" : "*",
+      "mocha": "1.3.0",
+      "jade":  "0.32.0",
+      "mongodb": "*",
+      "should": "1.0.0"
   }
 }
