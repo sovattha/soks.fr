@@ -15,11 +15,12 @@ var envHost = process.env['MONGO_NODE_DRIVER_HOST']
   ,port = envPort != null ? envPort: Connection.DEFAULT_PORT
   ,dbName = 'website';
 
-  var exchangeData = {};
-  var urlString = 'mongodb://' + user + ':' + password + '@' + host + ':' + port + '/' + dbName;
+var exchangeData = {};
+var urlString = 'mongodb://' + user + ':' + password + '@' + host + ':' + port + '/' + dbName;
 
-  suite('database', function() {
-  test('open should open database connection', function(done) {
+describe('database', function() {
+  it('should open database connection', function(done) {
+    console.log("Connecting using URL %s", urlString);
     MongoClient.connect(urlString, function(err, db) {
       if (err)
         throw err;
@@ -31,6 +32,7 @@ var envHost = process.env['MONGO_NODE_DRIVER_HOST']
 
         collection.count(function(err, count) {
           console.log("count = %s", count);
+          count.should.equal(1);
         });
 
         collection.find().toArray(function(err, results) {
@@ -41,12 +43,15 @@ var envHost = process.env['MONGO_NODE_DRIVER_HOST']
       });
     });
   });
-  test('remove all', function(done) {
+  it('remove all', function(done) {
     MongoClient.connect(urlString, function(err, db) {
       if (err)
         throw err;
       var collection = db.collection('test_insert');
       collection.remove(function() {
+        collection.count(function(err, count) {
+          count.should.equal(0);
+        });
         db.close();
         done();
       });
