@@ -11,3 +11,4 @@ public/css/.sass-cache/*
 public/video/*.oggtheora.ogv
 public/video/*.webm
 test/dbconf.js
+.settings/*
