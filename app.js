@@ -39,3 +39,7 @@ app.use(router._404);
 app.use(router._500);
 
 app.listen(process.env.PORT || 80);
+
+exports.listen = function (port) {
+  app.listen(port);
+};
