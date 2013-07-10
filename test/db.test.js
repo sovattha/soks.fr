@@ -3,6 +3,8 @@
 var assert = require('assert')
   , DbConf = require('./dbconf')
   , MongoClient = require('mongodb').MongoClient
+// Uncomment the following line to use the remote DB 
+//  , MongoClient = require('remote-mongodb').MongoClient
   , should = require('should');
 
 var envHost = process.env['MONGO_NODE_DRIVER_HOST']
@@ -16,45 +18,65 @@ var envHost = process.env['MONGO_NODE_DRIVER_HOST']
   ,dbName = 'website';
 
 var exchangeData = {};
-var urlString = 'mongodb://' + user + ':' + password + '@' + host + ':' + port + '/' + dbName;
+var urlString = user ? 'mongodb://' + user + ':' + password + '@' + host + ':' + port + '/' + dbName : 
+  'mongodb://' + host + ':' + port + '/' + dbName;
 
-describe('database', function() {
-  it('should open database connection', function(done) {
-    console.log("Connecting using URL %s", urlString);
-    MongoClient.connect(urlString, function(err, db) {
+MongoClient.connect(urlString, function(err, db) {
+  if (err)
+    throw err;
+  
+  describe('database', function() {
+
+    beforeEach(function(done) {
+      console.log("Removing all data at %s", urlString);
       if (err)
         throw err;
 
-      var collection = db.collection('test_insert');
-      collection.insert({
-        a : 2
+      db.collection('content').remove(function() {
+        db.collection('content').count(function(err, count) {
+          console.log("count content = %s", count);
+          count.should.equal(0);
+        });
+        done();
+      });
+    });
+  
+    it('should create the index record page', function(done) {
+      console.log("Create the index %s", urlString);
+      db.collection('content').insert({
+        index : {
+          title : 'Sovattha Sok',
+          description : 'Java & Javascript web developer'
+        }
       }, function(err, docs) {
-
-        collection.count(function(err, count) {
-          console.log("count = %s", count);
+        db.collection('content').count(function(err, count) {
+          console.log("count content = %s", count);
           count.should.equal(1);
         });
-
-        collection.find().toArray(function(err, results) {
-          console.dir(results);
-          db.close();
+        done();
+      });
+      
+      it('should create the video record page', function(done) {
+        console.log("Create the index %s", urlString);
+        db.collection('content').insert({
+          video : {
+            title : 'My videos',
+          }
+        }, function(err, docs) {
+          db.collection('content').count(function(err, count) {
+            console.log("count content = %s", count);
+            count.should.equal(2);
+          });
           done();
         });
       });
-    });
-  });
-  it('remove all', function(done) {
-    MongoClient.connect(urlString, function(err, db) {
-      if (err)
-        throw err;
-      var collection = db.collection('test_insert');
-      collection.remove(function() {
-        collection.count(function(err, count) {
-          count.should.equal(0);
-        });
+      
+      afterEach(function(done) {
+        console.log("Closing the session to %s", urlString);
         db.close();
         done();
       });
     });
   });
+
 });
