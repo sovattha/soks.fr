@@ -1,15 +1,10 @@
-.sovattha-sok, .sovattha-sok-audi-tt, .twitter-logo, .facebook-logo, .geekeries-logo, .html5-logo, .linkedin-logo, .sovattha-sok-audi-tt-logo, .google-plus-logo, .moncv-logo, .sovattha-sok-logo {
+.sovattha-sok, .twitter-logo, .facebook-logo, .geekeries-logo, .html5-logo, .linkedin-logo, .sovattha-sok-audi-tt-logo, .google-plus-logo, .moncv-logo, .sovattha-sok-logo, .sovattha-sok-audi-tt, .instagram-logo {
   background: url(sprites.png) no-repeat; }
 
 .sovattha-sok {
   background-position: 0 0;
   width: 700px;
   height: 467px; }
-
-.sovattha-sok-audi-tt {
-  background-position: 0 -468px;
-  width: 700px;
-  height: 327px; }
 
 .twitter-logo {
   background-position: -149px -1031px;
@@ -55,3 +50,13 @@
   background-position: 0 -798px;
   width: 509px;
   height: 212px; }
+
+.sovattha-sok-audi-tt {
+  background-position: 0 -469px;
+  width: 700px;
+  height: 327px; }
+
+.instagram-logo {
+  background-position: -284px -1031px;
+  width: 19px;
+  height: 19px; }
