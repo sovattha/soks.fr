@@ -1,7 +1,11 @@
 var express = require('express'),
 	fs = require('fs'),
 	router = require('./router'),
-	app = express();
+	app = express(),
+	companies = require('./quicko/companies');
+
+//The body parser will parse the POST requests
+app.use(express.bodyParser());
 
 // Set path to the views (template) directory
 app.set('views', __dirname + '/views');
@@ -26,6 +30,10 @@ app.configure('production', function() {
 app.get('/', router.index);
 app.get('/video', router.video);
 
+// Create a company
+app.post('/quicko/company', companies.save);
+app.get('/quicko/companies', companies.getCompanies);
+
 // The number of milliseconds in one day
 var oneDay = 86400000;
 // Serve up content from public directory
@@ -33,6 +41,10 @@ app.use(express.static(__dirname + '/public', {
 	maxAge : oneDay
 }));
 app.use(express.directory(__dirname + '/public'));
+app.use(express.static(__dirname + '/quicko/public', {
+	maxAge : oneDay
+}));
+app.use(express.directory(__dirname + '/quicko/public'));
 // Handle 404
 app.use(router._404);
 // Handle 500
