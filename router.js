@@ -4,6 +4,11 @@ module.exports = {
         title : 'Java & Javascript web developer'
       });
     },
+    traffic : function(req, res) {
+    	res.render('traffic.jade', {
+    		title : 'Traffic around Geneva'
+    	});
+    },
     video : function(req, res) {
       res.render('video/video.jade', {
         title : 'My videos'

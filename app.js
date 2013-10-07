@@ -25,6 +25,7 @@ app.configure('production', function() {
 // Routes
 app.get('/', router.index);
 app.get('/video', router.video);
+app.get('/traffic', router.traffic);
 
 // The number of milliseconds in one day
 var oneDay = 86400000;
